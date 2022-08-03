@@ -18,8 +18,8 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 
 with st.echo(code_location='below'):
-    total_points = st.slider(os['KEY1'], 1, 5000, 2000)
-    num_turns = st.slider(os['KEY2'], 1, 100, 9)
+    total_points = st.slider(os.environ['KEY1'], 1, 5000, 2000)
+    num_turns = st.slider(os.environ['KEY2'], 1, 100, 9)
 
     Point = namedtuple('Point', 'x y')
     data = []
