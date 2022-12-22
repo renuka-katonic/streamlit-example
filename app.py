@@ -17,6 +17,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 st.title("Streamlit Example")
+st.header("Check the Example")
 
 with st.echo(code_location='below'):
     total_points = st.slider(os.environ['KEY1'], 1, 5000, 2000)
